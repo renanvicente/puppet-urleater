@@ -1,0 +1,12 @@
+name 'renanvicente-urleater-get'
+version '0.0.1'
+
+author 'Renan Vicente'
+license 'Apache2'
+project_page 'http://renanvicente.com'
+source 'https://github.com/renanvicente/puppet-urleater-get'
+summary 'Puppet module for urleater-get'
+description 'This module installs and manages urleater-get. Check README for details.'
+dependency 'example42/puppi', '>=2.0.0'
+dependency 'example42/firewall', '>=2.0.0'
+dependency 'example42/monitor', '>=2.0.0'

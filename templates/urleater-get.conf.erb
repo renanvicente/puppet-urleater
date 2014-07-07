@@ -1,0 +1,13 @@
+[client]
+customer=<%= scope.lookupvar("urleater::customer") %>
+<% if scope.lookupvar("urleater::hostname") == true -%>
+hostname=<%= scope.lookupvar("urleater::hostname") %>
+<% else -%>
+hostname=<%= @fqdn %>
+<% end -%>
+<% if scope.lookupvar("urleater::vhost_directory") != '' -%>
+vhost_directory=<%= scope.lookupvar("urleater::vhost_directory") %>
+<% end -%>
+[server]
+server=<%= scope.lookupvar('urleater::server') %>
+port=<%= scope.lookupvar('urleater::port') %>

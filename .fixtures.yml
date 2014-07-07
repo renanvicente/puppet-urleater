@@ -1,0 +1,8 @@
+fixtures:
+  repositories:
+    "puppi": "git://github.com/example42/puppi.git"
+    "concat": "git://github.com/example42/puppet-concat.git"
+    "vcsrepo": "git://github.com/puppetlabs/puppetlabs-vcsrepo.git"
+  symlinks:
+    "urleater": "#{source_dir}"
+
