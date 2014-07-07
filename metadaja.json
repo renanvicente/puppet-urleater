@@ -1,0 +1,15 @@
+{
+  "name": "renanvicente-urleater",
+  "version": "0.0.3",
+  "author": "Renan Vicente",
+  "summary": "Puppet module for urleater",
+  "license": "Apache2",
+  "source": "https://github.com/renanvicente/puppet-urleater-get",
+  "project_page": "http://www.renanvicente.com",
+  "issues_url": "https://github.com/renanvicente/puppet-urleater-get/issues",
+  "description": "This module installs and manages urleater. Check README for details.",
+  "dependencies": [
+    {"name":"example42/puppi","version_requirement":">=2.0.0"},
+    {"name":"puppetlabs-vcsrepo","version_requirement":">=1.0.2"}
+  ]
+}
