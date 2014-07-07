@@ -6,7 +6,7 @@ Made by Renan Vicente
 
 Official site: http://www.renanvicente.com
 
-Official git repository: http://github.com/renanvicente/urleater-get
+Official git repository: http://github.com/renanvicente/puppet-urleater
 
 Released under the terms of Apache 2 License.
 
