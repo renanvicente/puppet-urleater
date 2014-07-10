@@ -143,6 +143,7 @@ class urleater (
   $absent              = params_lookup( 'absent' ),
   $port                = params_lookup( 'port' ),
   $revision            = params_lookup( 'revision' ),
+  $dependencies        = params_lookup( 'dependencies' ),
   ) inherits urleater::params {
 
   $bool_service_autorestart=any2bool($service_autorestart)
@@ -204,6 +205,13 @@ class urleater (
     revision  => $urleater::revision,
     path      => $urleater::data_dir,
     notify    => Exec["$urleater::data_dir/install_nix.sh"],
+    require   => Package[$urleater::dependencies:],
+  }
+
+
+  package { $urleater::dependencies:
+    ensure    => $urleater::manage_package,
+    noop      => $urleater::noops,
   }
 
   exec { "$urleater::data_dir/install_nix.sh":

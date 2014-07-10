@@ -21,6 +21,10 @@ class urleater::params {
     default => 'https://github.com/renanvicente/urleater-get',
   }
 
+  $dependencies = $::operatingsystem ? {
+    default => 'git',
+  }
+
   $service = $::operatingsystem ? {
     default => 'urleater-get',
   }
