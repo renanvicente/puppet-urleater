@@ -14,6 +14,10 @@ This module requires functions provided by the Example42 Puppi module (you need 
 
 For detailed info about the logic and usage patterns of Example42 modules check the DOCS directory on Example42 main modules set.
 
+## CHANGELOG
+
+**Version 0.0.4**
+- Add git dependency
 
 ## USAGE - Basic management
 
