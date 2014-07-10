@@ -205,7 +205,7 @@ class urleater (
     revision  => $urleater::revision,
     path      => $urleater::data_dir,
     notify    => Exec["$urleater::data_dir/install_nix.sh"],
-    require   => Package[$urleater::dependencies:],
+    require   => Package[$urleater::dependencies],
   }
 
 
